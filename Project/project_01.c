@@ -4,17 +4,18 @@
 
 int main() {
 
-    int n, z=1;
+    int n, try=0;
     
     srand(time(NULL));
     int random_number = rand() % 100 + 1;
 
-    for (int  i = 0; z=1 ; i++){
-        printf("Enter a random number between 1 and 100\n\t");
-        scanf("%d",&n);
+    while (1){
+        printf("Guess a random number between 1 and 100\n\t");
+        scanf("\t%d",&n);
 
-        if (n>1 && n<100){
-            for (int i = 0; z=1 ; i++) {
+        if (n>=1 && n<=100){
+            while (1) {
+                try++;
                 if (n>random_number){
                     printf("Lower number please\n\t");
                     scanf("%d",&n);
@@ -25,7 +26,7 @@ int main() {
                 }
                 else{
                     printf("correct number\n\n");
-                    printf("Your Points : %d",100-(i*8));
+                    printf("Your Points : %d",100-(try*6));
                     printf("\n");
                     break;
                 }
