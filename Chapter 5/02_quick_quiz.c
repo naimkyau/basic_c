@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-void good_morning();
-void good_afternoon();
-void good_evening();
-
-
 void good_morning(){
     printf("good morning\n");
 }
