@@ -4,17 +4,17 @@
 int factorial(int);
 
 // //function definition
-int factorial(int a){
-    int frl=1;
-    for (int i = 1; i <=a; i++) {
-        frl *=i;  
+int factorial(int n){
+    if (n == 1 || n == 0){
+        return 1;
     }
-    return frl;
+    //factorial(n) = factorial(n-1) X n
+    return factorial(n-1) *n;
 }
 
 int main() {
     int a=6;
     int result = factorial(a);
-    printf("Factorial is : %d\n", result);
+    printf("Factorial is : %d\n", factorial(a));
     return 0;
 }
