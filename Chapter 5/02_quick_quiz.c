@@ -1,20 +1,24 @@
 #include <stdio.h>
 
-void good_morning(){
+//Function prototype
+void morning();
+void afternoon();
+void night();
+
+//Function definition
+void morning(){
     printf("good morning\n");
 }
-
-void good_afternoon(){
+void afternoon(){
     printf("good afternoon\n");
 }
-
-void good_evening(){
-    printf("good evening\n");
+void night(){
+    printf("good night\n");
 }
 
-int main(){
-    good_morning();
-    good_afternoon();
-    good_evening();
+int main() {
+    morning();
+    afternoon();
+    night();
     return 0;
 }

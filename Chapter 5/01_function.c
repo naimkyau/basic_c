@@ -1,25 +1,23 @@
 #include <stdio.h>
 
+//Function prototype
+int sum(int, int);
+
+//function definition
 int sum(int x, int y){
-    printf("The sum is %d\n", x+y);
-    return x+y;
+    int result = x+y;
+    printf("The sum is : %d\n", result);
+    return result;
 }
 
-int main(){
-    int a1 = 2;
-    int b1 = 3;
+int main() {
+    int a = 2;
+    int b = 3;
+    sum(a, b);
 
-    sum(a1,b1); 
-
-    int a2 = 4;
-    int b2 = 5;
-
-    sum(a2,b2);
-
-    int a3 = 7;
-    int b3 = 8;
-
-    sum(a3, b3);
+    int c = 4;
+    int d = 5;
+    sum(c, d);
 
     return 0;
 }
