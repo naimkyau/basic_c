@@ -9,7 +9,6 @@ int main() {
                         // both are same 
         printf("The marks at index %d is %d\n", i, *ptr);
         ptr++;
-
     }
     return 0;
 }
